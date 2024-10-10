@@ -2,7 +2,8 @@
 Projet 1 - Cookie clicker
 
 #Design
-Font : Jersey 10
+Title Font : Jersey 10
 Font Color : 139A43
-Background video : https://fr.vecteezy.com/search-fr?content_type=video&qterm=matrixmatrix
+Text Font : Montserrat
+Background video : hacker typer.mp4
 Background color : F2F2F2
