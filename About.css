@@ -36,6 +36,8 @@ article{
     display: flex;
     padding-bottom: 2rem;
     align-items: center;
+    border: solid;
+    border-radius: 2rem;
 }
 article:nth-child(even){
     flex-direction: row-reverse;
