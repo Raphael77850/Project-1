@@ -1,0 +1,55 @@
+
+header{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 2rem;
+    gap: 2rem;
+
+}
+a{
+    text-decoration: none;
+    color: #139A43;
+    font-family:"Jersey 10";
+    font-size: medium;
+}
+h1{
+    color: #139A43;
+    font-family:"Jersey 10";
+    font-size: x-large;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+}
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    font-family:"Jersey 10";
+    color: #139A43;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+footer > a{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    a {
+        font-size: larger;
+    }
+    h1{
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+    
+    }
+} 
