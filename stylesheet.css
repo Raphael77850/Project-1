@@ -52,9 +52,10 @@ section {
     margin-top: 3rem;
 }
 
-.active-bonus > ul > li > img {
+.active-bonus > ul > li > button > img  {
     width: 5rem;
     border-radius: 20px;
+
 }
 
 .passive-bonus > ul > li > img {
@@ -136,6 +137,7 @@ footer > a{
     align-items: center;
 }
 
+
 @media screen and (min-width: 768px) {
     a {
         font-size: larger;
@@ -212,5 +214,4 @@ footer > a{
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-
 } 
