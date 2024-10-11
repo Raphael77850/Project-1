@@ -2,42 +2,78 @@
     margin: 0;
     padding: 0;
     color: var(--TextColor);
+    position:relative;
 }
 :root {
     --BackgroundColor:#F2F2F2;
     --TextColor: #139A43;
     --TextFont: "Jersey 10", sans-serif;
+    --ParagraphFont: "Montserrat", sans-serif;
     }
+
+header{
+        background-color: var(--BackgroundColor);
+        border-radius: 20px;
+        margin-left:.5rem;
+        margin-right:.5rem;
+        margin-top: .5rem;
+        gap: 5rem;
+        font-family: var(--TextFont);
+    }
+    
+ul >li {
+        list-style: none;
+        
+        }
+ul > li > a {
+    text-decoration: none;
+}
+
+ ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+
+    h1{
+        color:var(--TextColor);
+        font-family:var(--TextFont);
+        font-size: x-large;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        }
+
 .About > h2{
     display: flex;
     justify-content: center;
     padding-top: 2rem;
     font-family: var(--TextFont);
+    color:var(--BackgroundColor);
 }
 .Team > h2{
     display: flex;
     justify-content: center;
     font-family: var(--TextFont);
+    color:var(--BackgroundColor);
 }
-p{
+ p {
     padding: 1rem;
+    
 }
 img{
     width: 8rem;
     border-radius: 50%;
     height: 6rem;
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-}
+
 article{
     display: flex;
     padding-bottom: 2rem;
     align-items: center;
     border: solid;
     border-radius: 2rem;
+    background-color: var(--BackgroundColor);
 }
 article:nth-child(even){
     flex-direction: row-reverse;
@@ -46,17 +82,30 @@ a{
     justify-content: space-between;
 }
 footer{
-    background-color: #F2F2F2;
+    background-color: var(--BackgroundColor);
     display: flex;
     justify-content: space-around;
-    font-family:"Jersey 10";
-    color: #139A43;
+    font-family:var(--TextFont);
+    color: var(--TextColor);
     padding: 1rem;
     border-radius: 10px;
-    align-items: center;
-
 }
-footer > a{
+
+footer > a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+
+main {
+    font-family: var(--ParagraphFont);
+}
+
+video {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
