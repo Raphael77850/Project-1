@@ -51,7 +51,7 @@ ul > li > a {
     font-family: var(--TextFont);
     color:var(--BackgroundColor);
 }
-.Team > h2{
+h2{
     display: flex;
     justify-content: center;
     font-family: var(--TextFont);
@@ -109,43 +109,38 @@ video {
     min-height: 100%;
 }
 @media screen and (min-width: 768px) {
-    .Team {
-        display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 8px;
-    }
-.Team > h2 {
-    grid-column: span 4 / span 4;
-}
 
+.Team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+    
 .raphael-b {
     grid-column: span 2 / span 2;
-    grid-row-start: 2;
 }
 
 .aghiles {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
-    grid-row-start: 2;
 }
 
 .cecile {
     grid-column: span 2 / span 2;
-    grid-row-start: 3;
+    grid-row-start: 2;
 }
 
 .pierre {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
-    grid-row-start: 3;
+    grid-row-start: 2;
 }
 
 .raphael-s {
     grid-column: span 2 / span 2;
     grid-column-start: 2;
-    grid-row-start: 4;
+    grid-row-start: 3;
 }
 }
-
 
