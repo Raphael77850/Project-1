@@ -52,7 +52,7 @@ const arrayPassiveButtons = [
     passiveButton.classList.add("passive-button"); 
     passiveButton.textContent =`${item.name} - Prix: ${item.price} - Récompense: ${item.reward}`;
     passiveButton.style.opacity = 0;
-    passiveButton.style.fontFamily = "Jersey 10";
+    passiveButton.style.fontFamily = "'Jersey 10', sans serif";
     passiveButton.style.color= "#139A43";
     passiveButton.style.position = "absolute";
     passiveButton.style.top = "50%";
