@@ -1,0 +1,31 @@
+Fonctionnalités Floppy Clicker
+
+#Score
+ajouter octets JS => ok fait !
+et grossir l'affichage du score CSS
+[et chaque passage de cap changer en Ko > Mo > Go > To
+1000 octets = 1Ko
+1000 Ko = 1Mo
+etc...] => pour l'instant on laisse octets
+
+
+#Clicker // Floppy
+revoir le border radius autour du clicker => CSS
+faire un mouvement de push quand on clique dessus => JS
+au survol de la souris
+au click 
+
+
+#Bonus Actifs
+on part sur 3 Fonctionnalités
+Gaming Mouse : il coûte 100 octets et se déclenche au click du joueur => auto-clicker => quand on le débloque, toutes les secondes il clique tout seul 
+Mac Intosh : il coûte 1000 octets et se déclenche au click du joueur => boost du click => 1 click = * 50 octets pendant 30 secondes 
+PC : il coûte 10 000 octets et se déclenche au click du joueur => boost du click => JACKPOT ! 1 click = 10 000 puissance 2 (à voir pour faire animation JACKPOT ! pour ce bonus)
+=> pour chaque bonus : au click du joueur pour l'acheter son score diminue du montant/prix
+
+
+#Bonus Passifs
+On part sur 3 bonus => boost des bonus actifs
+Disk : il coûte 500 octets et se déclenche au click du joueur => il multiplie le Gaming Mouse par 5 et augmente le click du joueur par 7
+Disko : il coûte 2000 octets et se déclenche au click du joueur => il multiplie le Gaming Mouse par 10 et augmente le click du joueur par 2
+Diskator : il coûte 5000 octets et se déclenche au click du joueur => il booste le Mac Intosh => 1 click = * 100 octets pendant 30 secondes
