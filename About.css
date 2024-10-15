@@ -31,6 +31,7 @@ header{
     
 ul >li {
         list-style: none;
+        font-size: 1.5rem;
         
         }
 ul > li > a {
@@ -43,10 +44,10 @@ ul > li > a {
         justify-content: space-around;
     }
 
-    h1{
+h1{
         color:var(--TextColor);
         font-family:var(--TextFont);
-        font-size: x-large;
+        font-size: 3rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
         text-align: center;
@@ -62,6 +63,7 @@ h2{
     font-family: var(--TextFont);
     color:var(--BackgroundColor);
     padding: 1rem ;
+    font-size: 2rem;
 }
  p {
     padding: 1rem;
@@ -148,6 +150,9 @@ video {
     grid-column: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 3;
+}
+footer > a {
+    font-size: 1.5rem;
 }
 }
 

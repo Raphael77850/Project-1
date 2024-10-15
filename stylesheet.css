@@ -39,6 +39,9 @@ section {
     grid-column: span 2;
     margin-top: 2rem;
 }
+.score-box > h2 {
+    font-size: 3rem;
+}
 
 .clicker-box > button > img {
     width: 10rem;
@@ -53,13 +56,13 @@ section {
 }
 
 .active-bonus > ul > li > button > img  {
-    width: 5rem;
+    width: 6rem;
     border-radius: 20px;
 
 }
 
 .passive-bonus > ul > li > img {
-    width: 3rem;
+    width: 5rem;
     gap : .5rem;
 }
 
@@ -107,7 +110,9 @@ nav > ul{
     justify-content: space-around;
     
 }
-
+nav > ul > li > a {
+    font-size: 1.5rem;
+}
 
 
 a{
@@ -119,7 +124,7 @@ a{
 h1{
     color:var(--TextColor);
     font-family:var(--TextFont);
-    font-size: x-large;
+    font-size: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -141,6 +146,7 @@ footer > a{
 button {
    border: none;
    background-color: var(--BackgroundColor);
+   border-radius: 20px;
 }
 
 
@@ -149,7 +155,7 @@ button {
         font-size: larger;
     }
     h1{
-        font-size: xx-large;
+        font-size: 3rem;
         display: flex;
         justify-content: center;
     
@@ -175,11 +181,12 @@ button {
         grid-row: span 2;
         grid-area: 2 / 1 / 4 / 2;
         margin-bottom: 10rem;
-        width: 110%;
+        width: 90%;
+        margin-left: 3rem;
     }
 
     .clicker-box > button > img {
-        width:70%;
+        width:90%;
     }
 
     .active-bonus {
@@ -198,26 +205,30 @@ button {
         align-items: center;
         justify-content: space-evenly;
         grid-column: span 2;
-        margin : 1rem 1rem 1rem 4rem;
+        margin : 1rem 1rem 1rem 6rem;
         width:auto;
         height:fit-content;
     }
 
     .active-bonus > ul {
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: .5rem;
+        display: flex;
         overflow-y: hidden;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 2rem;
     }
 
     .passive-bonus > ul {
         display: flex;
-        justify-content: space-around;
-        gap: .5rem;
-    }
-
-    .passive-bonus {
+        overflow-y: hidden;
         padding-top: 3rem;
         padding-bottom: 3rem;
+        gap: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    footer > a, footer > p {
+        font-size: 1.5rem;
     }
 } 
