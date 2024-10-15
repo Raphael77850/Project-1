@@ -33,9 +33,6 @@ ul >li {
         list-style: none;
         
         }
-ul > li > a {
-    text-decoration: none;
-}
 
  ul {
         display: flex;
@@ -52,10 +49,7 @@ ul > li > a {
         text-align: center;
         }
 
-.About > h2{
-    display: flex;
-    justify-content: center;
-}
+
 h2{
     display: flex;
     justify-content: center;
@@ -63,6 +57,20 @@ h2{
     color:var(--BackgroundColor);
     padding: 1rem ;
 }
+
+h3, h4 {
+    font-family: var(--TextFont);
+}
+
+h4 > a > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+h4 { 
+    margin-top: -2rem;
+}
+
  p {
     padding: 1rem;
     
@@ -71,38 +79,71 @@ img{
     width: 8rem;
     border-radius: 50%;
     height: 6rem;
+    grid-row: span 2;
+    margin-left: 1rem;
+    margin-right: .5rem;
 }
 
 article{
-    display: flex;
     align-items: center;
     border: solid;
     border-radius: 2rem;
     background-color: var(--BackgroundColor);
     margin-bottom: 1rem;
+    padding-top: 1rem;
 }
-article:nth-child(even){
-    flex-direction: row-reverse;
+
+.About > article:first-of-type {
+    padding-top: 0rem;
 }
-a{
-    justify-content: space-between;
+
+.About > article > p > a {
+    font-size: large;
 }
+
+.aghiles > img, .pierre >img {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.aghiles > h3, .aghiles > h4, .pierre > h3, .pierre > h4 {
+    margin-left: 1rem;
+}
+.pierre > h4 {
+    margin-top: auto;
+}
+
+.Team > article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Team > article > p {
+    grid-column: span 2;
+    font-style: italic;
+}
+
 footer{
     background-color: var(--BackgroundColor);
     display: flex;
     justify-content: space-around;
     font-family:var(--TextFont);
     color: var(--TextColor);
-    padding: 1rem;
     border-radius: 10px;
 }
 
-footer > a {
+footer > a, footer > p{
     display: flex;
-    align-items: center;
-    text-decoration: none;
-    
+    justify-content: space-around;
+    align-items: center;    
 }
+
+a{
+    text-decoration: none;
+    color: var(--TextColor);
+    font-family: var(--TextFont);
+    font-size: medium;
+}
+
 
 main {
     font-family: var(--ParagraphFont);
@@ -149,5 +190,9 @@ video {
     grid-column-start: 2;
     grid-row-start: 3;
 }
+article {
+    padding-top: 0.5rem;
+}
+
 }
 
