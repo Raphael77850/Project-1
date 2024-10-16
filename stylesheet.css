@@ -102,7 +102,7 @@ li {
 }
 
 
-.passive-button {
+.passive-button, .active-button {
         font-family: var(--TextFont);
         color: var(--TextColor);
         font-size: large;
@@ -117,19 +117,6 @@ li {
 
 .visible {
         opacity: 1;
-    }
-
-.active-button {
-        font-family: var(--TextFont);
-        color: var(--TextColor);
-        font-size: large;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        opacity: 0; 
-        transition: opacity 0.3s ease; 
     }
 
 header{

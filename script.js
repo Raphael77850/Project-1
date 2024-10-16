@@ -75,7 +75,6 @@ const arrayActiveButtons = [
 
 const activeButtonsContainer = document.querySelectorAll(".button-bonus1, .button-bonus2, .button-bonus3");
 
-
 arrayActiveButtons.forEach((item, index) => {
     const activeButtons = activeButtonsContainer[index]; 
     const activeButton = document.createElement("button"); 
@@ -96,11 +95,6 @@ arrayActiveButtons.forEach((item, index) => {
 
 });
 
-/* Disk : il coûte 500 octets et se déclenche au click du joueur 
-=> il multiplie le Gaming Mouse par 5 et augmente le click du joueur par 7 */
 
-/* étape 0 : le joueur clique sur le bouton bonus passif Disk 
-étape 1 : s'assurer que le joueur a bien 500 o pour déclencher le bonus
-étape 2 : */
     
   
