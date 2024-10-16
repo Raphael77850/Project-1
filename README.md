@@ -10,4 +10,4 @@ Background color : F2F2F2
 
 # Bingo
 HTML & CSS : Raphaël B., Aghiles, Pierre, Cécile
-JS : Pierre, Aghiles
+JS : Pierre, Aghiles, Cécile, Raph

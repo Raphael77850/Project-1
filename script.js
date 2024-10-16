@@ -27,55 +27,80 @@ au survol afficher infos correspondant au bonus
 
 const arrayPassiveButtons = [
     {name : "Floppy Disk",
-    price : 100,
-    reward : 500
+    price : "500 octets"
 },
     {name : "Floppy Disko",
-    price : 500,
-    reward : 1000
+    price : "2000 octets"
 },
     {name : "Floppy Diskator",
-    price : 3000,
-    reward : 5000
-},
-    {name : "Floppy Diskount",
-    price : 10000,
-    reward : 50000
+    price : "5000 octets"
 }
 ]
-
-    const buttonContainers = document.querySelectorAll(".button-container");
+    const buttonContainers = document.querySelectorAll(".button-container1, .button-container2, .button-container3");
 
     arrayPassiveButtons.forEach((item, index) => {
     const buttonContainer = buttonContainers[index];
     const passiveButton = document.createElement("button"); 
     passiveButton.classList.add("passive-button"); 
-    passiveButton.textContent =`${item.name} - Prix: ${item.price} - Récompense: ${item.reward}`;
-    passiveButton.style.opacity = 0;
-    passiveButton.style.fontFamily = "'Jersey 10', sans serif";
-    passiveButton.style.color= "#139A43";
-    passiveButton.style.position = "absolute";
-    passiveButton.style.top = "50%";
-    passiveButton.style.left = "50%";
-    passiveButton.style.transform = "translate(-50%, -50%)";
-    passiveButton.style.zIndex = 10;
+    passiveButton.textContent =`${item.name} - Prix: ${item.price}`;
 
     passiveButton.addEventListener('mouseover', function () {
-        passiveButton.style.opacity = 1 ; 
+        passiveButton.classList.add("visible") ; 
     });
 
     passiveButton.addEventListener('mouseout', function () {
-        passiveButton.style.opacity = 0; 
+        passiveButton.classList.remove("visible") ;     
     });
 
-    buttonContainer.style.position ="relative";
     buttonContainer.appendChild(passiveButton);
 });
 
 
+// Bonus actifs => afficher infos de chaque bonus au survol
+/* le bouton est déjà créé => j'ai retiré le bouton de la plage html et ai créé un bouton via JS, 
+ajouter une classe 
+au survol afficher les infos sur chaque image */
+
+const arrayActiveButtons = [
+    {name : "Gaming Mouse",
+    price : "100 octets"
+},
+    {name : "Mac Intosh",
+    price : "1000 octets"
+},
+    {name : "PC",
+    price : "10000 octets"
+}
+]
+
+const activeButtonsContainer = document.querySelectorAll(".button-bonus1, .button-bonus2, .button-bonus3");
 
 
+arrayActiveButtons.forEach((item, index) => {
+    const activeButtons = activeButtonsContainer[index]; 
+    const activeButton = document.createElement("button"); 
 
+    activeButton.classList.add("active-button");
+    activeButton.textContent =`${item.name} - Prix: ${item.price}`;
 
+    activeButton.addEventListener('mouseover', function () {
+        activeButton.classList.add("visible") ; 
+    });
+
+    activeButton.addEventListener('mouseout', function () {
+        activeButton.classList.remove("visible") ;     
+    });
+
+    activeButtons.appendChild(activeButton);
+ 
+
+});
+
+/* Disk : il coûte 500 octets et se déclenche au click du joueur 
+=> il multiplie le Gaming Mouse par 5 et augmente le click du joueur par 7 */
+
+/* étape 0 : le joueur clique sur le bouton bonus passif Disk 
+étape 1 : s'assurer que le joueur a bien 500 o pour déclencher le bonus
+étape 2 : */
     
   
