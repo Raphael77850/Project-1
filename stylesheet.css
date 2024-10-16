@@ -149,6 +149,65 @@ button {
    border-radius: 20px;
 }
 
+/* Animation de survol du bouton Mac Intosh */
+#macIntoshButton {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet lors du survol */
+#macIntoshButton:hover {
+    transform: scale(1.1) rotate(5deg); /* Agrandit et incline légèrement le bouton */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Ajoute une ombre */
+}
+
+/* Effet normal du bouton */
+#macIntoshButton {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Effet de "push" lors du clic */
+#macIntoshButton:active {
+    transform: scale(0.95); /* Rétrécit légèrement le bouton */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Réduit l'ombre pour renforcer l'effet */
+}
+
+/* Style pour l'infobulle */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none; /* Empêche de bloquer les clics */
+    z-index: 1000;
+    display: none; /* Masqué par défaut */
+}
+
+/* code mouvement Diskator bouton
+
+/* Animation de survol du bouton Diskator 
+#diskator-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet lors du survol 
+#diskator-button:hover {
+    transform: scale(1.1) rotate(5deg); /* Agrandit et incline légèrement le bouton 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Ajoute une ombre 
+}
+
+/* Effet normal du bouton 
+#diskator-button {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Effet de "push" lors du clic 
+#diskator-button {
+    transform: scale(0.95); /* Rétrécit légèrement le bouton 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Réduit l'ombre pour renforcer l'effet 
+}
+ */
 
 @media screen and (min-width: 768px) {
     a {
