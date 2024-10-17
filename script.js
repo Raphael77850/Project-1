@@ -9,7 +9,7 @@ const diskatorButton = document.querySelector('.button-container3');
 
 //************************** BONUS ACTIFS GAMING MOUSE & PC **************************************************** */
 let userClickValue = 1;
-let score = 0;
+let score = 9999;
 
 let bonusUse = false; // indicateur pour savoir si le bonus a été utilisé
 button.addEventListener("click", function () {
@@ -89,41 +89,19 @@ macIntoshButton.addEventListener('click', function(){
         }, 30000);
     }
 });
-
-
- let bonusPassif3 = false
- const buttonBonusPassif3 = document.querySelector(".button-container3")
- buttonBonusPassif3.addEventListener ("click",function boostBonusValueButton2(){
+let bonusValue3 = 5000;
+let bonusPassif3 = false;
+const buttonBonusPassif3 = document.querySelector(".button-container3")
+buttonBonusPassif3.addEventListener ("click",function boostBonusValueButton2(){
     console.log ("Bonus passif")
-    if(score >= 50 && !bonusPassif3){
-        bonusPassif3 = true
+    if(score >= bonusValue3 && !bonusPassif3){
+        score -= bonusValue3;
+        bonusPassif3 = true;
         console.log("before", valueBonus2)
         valueBonus2 = 100
         console.log("after", valueBonus2)
     }
-
-
-    /*
-    Clique sur le bonus
-    si le score est supérieur ou égale au bonuspassif3 achat possible 
-    modication du bonusvalue2 
-    achat bonus désactivé
-        */
-
  })
-
- /*
-bonus passif3 coute 5000 octet, il se déclenche au click au joueur et soustrait le coût au score
-il boost le mac intosh.
-Le mac intosh donne 50 octet en plus au clique utilisateur (=> 50+1)
-Le bonus passif va transformer le 50 en 100 donc après l'achat du bonus passif,
-Le mac intosh va donner 100 octet au clique utilisateur et non plus 50
-
-*/
-
-
-// Bonus passifs => afficher infos de chaque bonus au survol
-
 const arrayPassiveButtons = [
     {name : "Floppy Disk",
     price : "500 octets"
@@ -153,10 +131,6 @@ const arrayPassiveButtons = [
 
     buttonContainer.appendChild(passiveButton);
 });
-
-
-// Bonus actifs => afficher infos de chaque bonus au survol
-
 const arrayActiveButtons = [
     {name : "Gaming Mouse",
     price : "100 octets"
@@ -168,9 +142,7 @@ const arrayActiveButtons = [
     price : "10000 octets"
 }
 ]
-
 const activeButtonsContainer = document.querySelectorAll(".button-bonus1, .button-bonus2, .button-bonus3");
-
 
 arrayActiveButtons.forEach((item, index) => {
     const activeButtons = activeButtonsContainer[index]; 
@@ -191,15 +163,11 @@ arrayActiveButtons.forEach((item, index) => {
  
 
 });
-
-
-   // Liste des passifs avec leurs coûts
 const passives = [
     { colorImage: "images-floppypassifs/diskette_1083346.png", cost: 500 },
     { colorImage: "images-floppypassifs/diskette_1602224.png", cost: 2000 },
     { colorImage: "images-floppypassifs/disc_9849805.png", cost: 5000 },
 ];
-
 function updatePassives(score) {
     const passiveImages = document.querySelectorAll(".button-container1, .button-container2, .button-container3");
     passiveImages.forEach((image, index) => {
