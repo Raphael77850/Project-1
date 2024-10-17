@@ -9,7 +9,7 @@ const diskatorButton = document.querySelector('.button-container3');
 
 //************************** BONUS ACTIFS GAMING MOUSE & PC **************************************************** */
 let userClickValue = 1;
-let score = 0;
+let score = 9999;
 let bonusUse = false; // indicateur pour savoir si le bonus a été utilisé
 button.addEventListener("click", function () {
   score+= userClickValue;
@@ -92,6 +92,10 @@ macIntoshButton.addEventListener('click', function(){
             score-= buttonContainer3Price;
             userClickValue += 100;
             titre.textContent = score;
+            setTimeout(() => {
+              userClickValue = 1;
+              bonusPassif3 = false;
+          }, 30000);
         } 
 
      })
