@@ -42,6 +42,7 @@ section {
 }
 .score-box > h2 {
     font-size: 3rem;
+    width: 90%;
 }
 
 .clicker-box > button > img {
@@ -49,7 +50,7 @@ section {
     padding: 1rem;
 }
 
-.clicker-box > button:hover {
+.clicker-box > button > img:hover {
     width: 75%;
     opacity: 0.9;
     cursor: pointer;
