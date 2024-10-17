@@ -95,7 +95,7 @@ let bonusPassif3 = false;
 const buttonBonusPassif3 = document.querySelector(".button-container3");
 buttonBonusPassif3.addEventListener("click", function boostBonusValueButton2() {
 	console.log("Bonus passif");
-	if (score >= 5000 && !bonusPassif3) {
+	if (score >= 50 && !bonusPassif3) {
 		bonusPassif3 = true;
 		console.log("before", valueBonus2);
 		valueBonus2 = 100;
@@ -183,7 +183,6 @@ const passives = [
 	{ colorImage: "images-floppypassifs/diskette_1602224.png", cost: 2000 },
 	{ colorImage: "images-floppypassifs/disc_9849805.png", cost: 5000 },
 ];
-
 function updatePassives(score) {
 	const passiveImages = document.querySelectorAll(
 		".button-container1, .button-container2, .button-container3",
