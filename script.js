@@ -70,6 +70,7 @@ diskoPassiv.addEventListener("click", function() {
 }});
 
 //**************************************** RAPH CODE************************************** */
+let macIntoshActive = false
 let bonusValue2 = false;
 const bonusValueButton2 = 1000;
 macIntoshButton.addEventListener('click', function(){
@@ -83,17 +84,22 @@ macIntoshButton.addEventListener('click', function(){
             bonusValueButton2 = false;
         }, 30000);
     }});
+
+     let diskatorPurchased = false
      let bonusPassif3 = false;
      const buttonContainer3Price = 5000;
      const diskator = document.querySelector('.button-container3');
      diskator.addEventListener('click', function(){
-        if ( score >= buttonContainer3Price && !bonusPassif3 && !bonusValue2){
+        if ( score >= buttonContainer3Price && !bonusPassif3){
             score-= buttonContainer3Price;
-            userClickValue += 100;
-            titre.textContent = score;
+            diskatorPurchased = true
+            boostBonusValueButton2();
+            updateScoreDisplay();
         } 
-
-     })
+ })
+ function boostBonusValueButton2(){
+    userClickValue += 100
+ }
           
 
 /*let bonusClickValue = 0; 
