@@ -38,6 +38,7 @@ section {
 }
 .score-box > h2 {
     font-size: 3rem;
+    width: 90%;
 }
 
 .clicker-box > button > img {
