@@ -1,6 +1,6 @@
 
 
-const titre = document.querySelector('.Score');
+const titre = document.querySelector('.score');
 titre.textContent = "0";
 
 const scoreElement = document.querySelector('.Score');
