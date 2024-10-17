@@ -9,7 +9,7 @@ const diskatorButton = document.querySelector('.button-container3');
 
 //************************** BONUS ACTIFS GAMING MOUSE & PC **************************************************** */
 let userClickValue = 1;
-let score = 9999;
+let score = 0;
 let bonusUse = false; // indicateur pour savoir si le bonus a été utilisé
 button.addEventListener("click", function () {
   score+= userClickValue;
