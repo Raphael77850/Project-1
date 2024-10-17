@@ -28,17 +28,24 @@ header{
         gap: 5rem;
         font-family: var(--TextFont);
     }
-    
-ul >li {
-        list-style: none;
-        font-size: 1.5rem;
-        
-        }
-
- ul {
+    nav {
         display: flex;
-        list-style-type: none;
+        flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+    }
+    
+    header > p {
+        list-style: none;
+    }
+    nav > p > a {
+        font-size: 1.5rem;
+    }
+    nav > p:first-of-type {
+        padding-left: 10px;
+    }
+    nav > p:last-of-type {
+        padding-right: 10px;
     }
 
 h1{
@@ -74,7 +81,7 @@ h4 {
 }
 
  p {
-    padding: 1rem;
+    padding: 0.5rem;
     
 }
 img{
@@ -196,5 +203,12 @@ article {
     padding-top: 0.5rem;
 }
 
+footer > a, footer > p {
+    font-size: 1.5rem;
+}
+
+nav > p > a {
+    font-size: 2.25rem;
+}
 }
 
