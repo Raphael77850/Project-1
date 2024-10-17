@@ -87,7 +87,7 @@ macIntoshButton.addEventListener('click', function(){
      const buttonContainer3Price = 5000;
      const diskator = document.querySelector('.button-container3');
      diskator.addEventListener('click', function(){
-        if ( score >= buttonContainer3Price && !bonusPassif3 && !bonusValue2){
+        if ( score >= buttonContainer3Price && !bonusPassif3){
             score-= buttonContainer3Price;
             userClickValue += 100;
             titre.textContent = score;
