@@ -73,7 +73,7 @@ diskoPassiv.addEventListener("click", function() {
 //**************************************** BONUS ACTIF MAC INTOSH & BONUS PASSIF DISKATOR ************************************** */
 let bonusValue2 = false;
 const bonusValueButton2 = 1000;
-let valueBonus2 = 50
+let valueBonus2 = 50;
 
 macIntoshButton.addEventListener('click', function(){
     if ( score >= bonusValueButton2 && !bonusValue2){
