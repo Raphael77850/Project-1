@@ -10,11 +10,12 @@ const diskatorButton = document.querySelector('.button-container3');
 //************************** BONUS ACTIFS GAMING MOUSE & PC **************************************************** */
 let userClickValue = 1;
 let score = 0;
+
 let bonusUse = false; // indicateur pour savoir si le bonus a été utilisé
 button.addEventListener("click", function () {
   score+= userClickValue;
   titre.textContent = score;
-
+updatePassives(score);
   if (score > 10000 && !bonusUse) {
     bonus3.style.display = "block"; // affiche le bouton bonus si score >=10000
   }
@@ -170,6 +171,21 @@ arrayActiveButtons.forEach((item, index) => {
 });
 
 
-    
+   // Liste des passifs avec leurs coûts
+const passives = [
+    { colorImage: "images-floppypassifs/diskette_1083346.png", cost: 500 },
+    { colorImage: "images-floppypassifs/diskette_1602224.png", cost: 2000 },
+    { colorImage: "images-floppypassifs/disc_9849805.png", cost: 5000 },
+];
+
+function updatePassives(score) {
+    const passiveImages = document.querySelectorAll(".button-container1, .button-container2, .button-container3");
+    passiveImages.forEach((image, index) => {
+        const passive = passives[index];
+        if (score >= passive.cost) {
+            image.children[0].src = passive.colorImage;  
+        }});
+        
+}
   
 
