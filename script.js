@@ -9,7 +9,7 @@ const diskatorButton = document.querySelector(".button-container3");
 
 //************************** BONUS ACTIFS GAMING MOUSE & PC **************************************************** */
 let userClickValue = 1;
-let score = 450;
+let score = 0;
 let bonusUse = false; 
 button.addEventListener("click", function () {
 	score += userClickValue;
@@ -34,6 +34,7 @@ const gamingMouse = document.querySelector(".button-bonus1");
 function autoClicker() {
 	if (score >= bonus1price) {
 		score -= bonus1price;
+		bonus1price *= 2;
 		setInterval(function () {
 			score += autoClickvalue;
 			titre.textContent = score;
@@ -42,7 +43,6 @@ function autoClicker() {
 }
 gamingMouse.addEventListener("click", function () {
 	autoClicker();
-	bonus1price *= 2;
 });
 
 //************************** BONUS PASSIFS DISK & DISKO **************************************************** */
