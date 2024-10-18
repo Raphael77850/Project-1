@@ -9,23 +9,22 @@ const diskatorButton = document.querySelector(".button-container3");
 
 //************************** BONUS ACTIFS GAMING MOUSE & PC **************************************************** */
 let userClickValue = 1;
-let score = 0;
-let bonusUse = false; // indicateur pour savoir si le bonus a été utilisé
+let score = 450;
+let bonusUse = false; 
 button.addEventListener("click", function () {
 	score += userClickValue;
 	titre.textContent = score;
 	updatePassives(score);
 	if (score > 10000 && !bonusUse) {
-		bonus3.style.display = "block"; // affiche le bouton bonus si score >=10000
+		bonus3.style.display = "block"; 
 	}
 });
 
 bonus3.addEventListener("click", function () {
 	if (!bonusUse && score > 10000) {
-		score = (score - 10000) * 10000; // Multiplier le reste par 10 000
+		score = (score - 10000) * 10000; 
 		titre.textContent = score;
-		bonusUse = true; // Indique que le bonus a été utilisé
-		// bonus3.style.display = 'none'; // Ne pas cacher le bouton bonus
+		bonusUse = true; 
 	}
 });
 
@@ -89,34 +88,23 @@ macIntoshButton.addEventListener("click", function () {
 		}, 30000);
 	}
 });
-
+let bonusValue3 = 5000;
 let bonusPassif3 = false;
 const buttonBonusPassif3 = document.querySelector(".button-container3");
 buttonBonusPassif3.addEventListener("click", function boostBonusValueButton2() {
 	console.log("Bonus passif");
-	if (score >= 50 && !bonusPassif3) {
+	if (score >= bonusValue3 && !bonusPassif3) {
+		score -= bonusValue3;
 		bonusPassif3 = true;
+		titre.textContent = score;
 		console.log("before", valueBonus2);
 		valueBonus2 = 100;
 		console.log("after", valueBonus2);
 	}
 
-	/*
-    Clique sur le bonus
-    si le score est supérieur ou égale au bonuspassif3 achat possible 
-    modication du bonusvalue2 
-    achat bonus désactivé
-        */
+	
 });
 
-/*
-bonus passif3 coute 5000 octet, il se déclenche au click au joueur et soustrait le coût au score
-il boost le mac intosh.
-Le mac intosh donne 50 octet en plus au clique utilisateur (=> 50+1)
-Le bonus passif va transformer le 50 en 100 donc après l'achat du bonus passif,
-Le mac intosh va donner 100 octet au clique utilisateur et non plus 50
-
-*/
 
 // Bonus passifs => afficher infos de chaque bonus au survol
 
